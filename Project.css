@@ -1,0 +1,66 @@
+footer {
+  display: flex;
+  background-color: lightpink;
+  color: white;
+  height: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer div {
+  display: flex;
+  padding: 12px;
+}
+
+footer #foot_image {
+  display: flex;
+  padding: 0px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 12%;
+}
+
+#foot_image img {
+  display: flex;
+  border-radius: 10%;
+}
+
+#Location img {
+  display: flex;
+  border-radius: 8%;
+  position: relative;
+  left: 6px;
+  top: 40px;
+
+  justify-self: center;
+}
+
+#Location li {
+  list-style: square;
+  padding-top: 18px;
+}
+
+#ContactUs img,
+#OpeningHours img {
+  display: flex;
+  border-radius: 8%;
+  justify-self: center;
+  left: 0px;
+  top: 5px;
+  position: relative;
+}
+
+#ContactUs,
+#OpeningHours,
+#SocialMedia {
+  display: flex;
+}
+
+#SocialMedia img {
+  display: flex;
+  border-style: solid black;
+  border-radius: 50%;
+  position: relative;
+}
