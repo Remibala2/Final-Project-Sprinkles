@@ -1,8 +1,14 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   display: flex;
   background-color: lightpink;
   color: white;
-  height: 150px;
+  height: 120px;
   font-size: 14px;
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -13,13 +19,10 @@ footer div {
   padding: 12px;
 }
 
-footer #foot_image {
-  display: flex;
-  padding: 0px;
-  border-color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 12%;
+#foot_image img {
+  border: 2px solid white;
+  height: 80px;
+  width: 150px;
 }
 
 #foot_image img {
@@ -63,4 +66,50 @@ footer #foot_image {
   border-style: solid black;
   border-radius: 50%;
   position: relative;
+}
+
+.dropdown button {
+  background-color: white;
+  color: black;
+  text-align: justify;
+  border-radius: 10%;
+  width: fit-content;
+}
+
+.card img {
+  height: 15rem;
+}
+
+.card {
+  margin: 2rem 1rem 1rem;
+}
+
+.row card {
+  height: 5rem;
+}
+
+.dropdown {
+  margin: 2rem 0 0 5rem;
+}
+
+.alert {
+  margin: 5rem 0 0 0;
+  color: red;
+  background-color: hsl(60, 92%, 76%);
+  text-align: center;
+}
+.pagination {
+  margin: 30px 500px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  [class*="col-"] {
+    width: 100%;
+  }
 }
