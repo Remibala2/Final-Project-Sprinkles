@@ -55,87 +55,125 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Feedback Us</a>
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
           </li>
 
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Feedback Us</a>
+          </li>-->
+
           <li class="nav-item">
-            <a class="nav-link" href="#">Admin Form</a>
+            <a class="nav-link" href="adminForm.html">Admin Form</a>
           </li>
-         
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <!--  <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-        </form>
+        </form>-->
       </div>
     </nav>
 
     <!--Geetha -->
 
-    <form  onSubmit="event.preventDefault(); addForm(); ">
+    <form id="adminform" onSubmit="event.preventDefault(); addForm(); ">
       <div class="container">
         <h3>Add Product Here</h3>
+      </div>
+      <div class="arow">
+        <div class="col-lg-6 my-8">
+          <div class="form-group">
+            <label for="cake_id"> Cake ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cake_id"
+              name="cake_id"
+              placeholder="Enter Cake ID"
+              required
+            />
           </div>
-          <div class="row" >
-             <div class="col-lg-6 my-8">
 
-                <div class="form-group">
-                  <label for="cake_id"> Cake ID</label>
-                  <input type="text" class="form-control" id="cake_id" name="cake_id" placeholder="Enter Cake ID" required>
-                </div>
+          <div class="form-group">
+            <label for="cake_name"> Cake's Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cake_name"
+              name="cake_name"
+              placeholder="Enter Cake's Name"
+              required
+            />
+          </div>
 
-                <div class="form-group">
-                  <label for="cake_name"> Cake's Name</label>
-                  <input type="text" class="form-control" id="cake_name" name="cake_name" placeholder="Enter Cake's Name" required>
-                </div>  
-                
-                <div class="form-group">
-                  <label for="quantity"> Quantity</label>
-                  <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Enter Quantity" required>
-                </div>
+          <div class="form-group">
+            <label for="quantity"> Quantity</label>
+            <input
+              type="text"
+              class="form-control"
+              id="quantity"
+              name="quantity"
+              placeholder="Enter Quantity"
+              required
+            />
+          </div>
 
-                <div class="form-group">
-                  <label for="weight">Choose Weight</label>
-                    <select class="form-control" id="weight" name="weight" >
-                      <option value="select">Select</option>
-                      <option value="half">1/2 KG</option>
-                      <option value="one">1 KG</option>
-                      <option value="two">2 KG</option>
-                    </select>
-                </div> 
-                <div class="form-group">
-                  <label for="price"> Price</label>
-                  <input type="text" class="form-control" id="price" name="price" placeholder="Enter Price" required>
-                </div>
+          <div class="form-group">
+            <label for="weight">Choose Weight</label>
+            <select class="form-control" id="weight" name="weight">
+              <option value="select">Select</option>
+              <option value="half">1/2 KG</option>
+              <option value="one">1 KG</option>
+              <option value="two">2 KG</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="price"> Price</label>
+            <input
+              type="text"
+              class="form-control"
+              id="price"
+              name="price"
+              placeholder="Enter Price"
+              required
+            />
+          </div>
 
-                <div class="form-group">                              
-                  <label for="description">Description</label>
-                  <textarea id="description"  name="description"  placeholder="Description.."  rows="3" required></textarea>
-                </div>
-            </div> <!-- End of first column div --> 
-                                  
-            <div class="col-lg-6 my-8">
-              <div class="form-group">
-                <label for="product_image">Product Image</label>
-                <input type="file" class="form-control-file" id="product_image">
-              </div> 
-            </div> <!-- End of second column div --> 
-          </div>  <!-- End of first row div --> 
-          
-            <div class="row container" >
-              <div class="form-group col-md-4 ">
-                <button type="submit" class="btn btn-primary btn-lg ">Add</button>
-              </div>
-            </div> <!-- End of second row div --> 
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Description.."
+              rows="3"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <!-- End of first column div -->
+
+        <div class="col-lg-6 my-8">
+          <div class="form-group">
+            <label for="product_image">Product Image</label>
+            <input type="file" class="form-control-file" id="product_image" />
+          </div>
+        </div>
+        <!-- End of second column div -->
+      </div>
+      <!-- End of first row div -->
+
+      <div class="row container">
+        <div class="form-group col-md-4">
+          <button type="submit" class="btn btn-primary btn-lg">Add</button>
+        </div>
+      </div>
+      <!-- End of second row div -->
     </form>
-              
-            
-      
-                  <script src="js/formScript.js "></script>              
+
+    <script src="js/formScript.js "></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

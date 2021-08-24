@@ -3,69 +3,24 @@ body {
   padding: 0;
 }
 
-footer {
-  display: flex;
-  background-color: black;
-  color: white;
-  height: 120px;
-  font-size: 10px;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+#back-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:lightcoral; /* Set a background color */
+  color:cyan /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 75%; /* Rounded corners */
+  font-size: 14px; /* Increase font size */  
 }
 
-footer div {
-  display: flex;
-  padding: 12px;
-}
-
-#foot_image img {
-  border: 2px solid white;
-  height: 80px;
-  width: 150px;
-}
-
-#foot_image img {
-  display: flex;
-  border-radius: 10%;
-}
-
-#Location img {
-  display: flex;
-  border-radius: 8%;
-  position: relative;
-  left: 6px;
-  top: 40px;
-
-  justify-self: center;
-}
-
-#Location li {
-  list-style: square;
-  padding-top: 18px;
-}
-
-#ContactUs img,
-#OpeningHours img {
-  display: flex;
-  border-radius: 8%;
-  justify-self: center;
-  left: 0px;
-  top: 5px;
-  position: relative;
-}
-
-#ContactUs,
-#OpeningHours,
-#SocialMedia {
-  display: flex;
-}
-
-#SocialMedia img {
-  display: flex;
-  border-style: solid black;
-  border-radius: 50%;
-  position: relative;
+#back-top:hover {
+  background-color:pink;/* Add a dark-grey background on hover */
 }
 
 .dropdown button {
@@ -76,16 +31,18 @@ footer div {
   width: fit-content;
 }
 
-.card img {
-  height: 15rem;
+.row img {
+  display: flex;
+  height: 16rem;
+  width: auto;
+  border: none;
 }
 
-.card {
-  margin: 2rem 1rem 1rem;
-}
-
-.row card {
-  height: 5rem;
+.row {
+  display: flex;
+  margin: 16px;
+  padding: 30px;
+  height: 100rem;
 }
 
 .dropdown {
@@ -93,10 +50,13 @@ footer div {
 }
 
 .alert {
-  margin: 80px 0 0 0;
-  color: red;
-  background-color: silver;
+  margin: 60px 0 0 0;
+  color:red;
+  background-color: teal;
   text-align: center;
+font-size: 14px;
+  opacity: 0.6;
+  font-family: cursive;
 }
 .pagination {
   margin: 30px 500px;
@@ -114,13 +74,229 @@ footer div {
   }
 }
 
-.jumbotron,
-.breadcrumb {
+.jumbotron {
+  margin: 12px 0 0 0;
+  position: inherit;
+  display: flex;
   background-color: lightcyan;
+  background-image: url("https://images.unsplash.com/photo-1506224772180-d75b3efbe9be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+  opacity: 0.80;
+  height: 200px;
+  justify-content: center;
 }
 
-nav .breadcrumb {
+.display-5 {
+  color: black;
+  font-family: monospace;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.display-4 {
+  color: black;
+  font-style: italic;
+}
+
+.modal-body #modalDescription {  
+  text-overflow: clip;
+}
+
+#modalName {  
+  font-family:cursive;
+  font-size: 30px;
+  color: black;
+}
+
+#modalClose {  
+  font-family:cursive;
+  font-size: 15px;
+  border-style: hidden;
+  background-color:teal;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;  
+  
+}
+
+footer h2 {
+  display: flex;
+  margin: 12px;
+  font-size: 12px;
+  width: max-content;  
+}
+
+#Section_top {
+  display: flex;
+  background-color:white;
+  margin: 20px;
+}
+
+#Section_top img {
+  width: 60%;
+  height: 500px;
+  margin: 0 0 50px 20px;;
+}
+
+#Section_top h2 {
+  display: flex;
+  margin: 200px 200px 12px 48px;
+  font-size: 30px;
+  
+}
+
+#contact_submit_btn{
+  display: flex;
+  color: white;
+  margin: 20px;
+ background-color:gray;
+  width: auto;
+  height: 30px;
   justify-content: center;
-  font-weight: bolder;
-  $breadcrumb-divider: quote(">");
+}
+
+
+#Section_top p {
+  font-size: 14px;
+  margin: 0px 120px 5px 48px;
+  font-weight: lighter;
+}
+
+#Section_top a {
+  display: flex;
+  color: white;
+  margin: 50px;
+ background-color:gray;
+  width: 15%;
+  height: 30px;
+  justify-content: center;
+}
+
+#Section_top a:link {
+  text-decoration: none;
+}
+
+#Section_bottom{
+  display: flex; 
+  flex-direction: row; 
+}
+
+#contactus_topleft{
+  display: flex; 
+  flex-direction: column; 
+  width: 30%;
+  margin: 100px 0 20px 20px; 
+    padding: 30px;
+justify-content: center;    
+ color:black;
+ height: 450px;
+}
+
+#contactus_topleft div{
+  display: flex; 
+  flex-direction: row; 
+  margin: 10px 0 10px 20px;
+    padding-inline: 5px;
+justify-content:flex-start;    
+ color:black;
+ }
+
+#contactus_topright{
+  display: flex; 
+  flex-direction: row; 
+  margin: 100px 20px 0 0;
+background-color:lightgrey;
+    width: 70%;
+    direction:ltr;
+    padding: 40px;
+justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+ color:white;
+ height: 450px;
+}
+
+#contact_enquiry{
+  width: 480px;
+  height: 100px;
+  border: 1px solid black
+  
+}
+
+#adminform {
+  margin: 100px;
+ }
+
+#adminform h3 {
+  color: teal;
+  text-align: center;
+  font-size: 50px;
+  
+}
+#adminform input[type=file],
+  textarea {
+    /* Full width */
+      width: 100%;
+      /* Some padding */
+      padding: 10px;
+      /* Rounded borders */
+      border-radius: 4px;
+      
+  }
+  #adminform label {
+    font-size: 20px;
+    font-weight: bolder;
+
+  }
+
+@media only screen and (max-width: 600px) {
+  #Section_bottom,
+  #contactus_topleft,
+  #contactus_topright {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: x-small;
+  }
+  #contactus_topleft
+   {
+    display: none;
+  }
+  
+  #contactus_topright table td{
+    display: flex;
+    justify-content: center;
+    }
+#contact_name, #contact_email, #contact_mobile, #contact_enquiry {
+  width:75%
+}
+
+}
+
+@media only screen and (max-width: 950px) {
+  #Section_bottom,
+  #contactus_topleft,
+  #contactus_topright
+   {
+     display: flex;
+    flex-direction: column;
+    width:auto;
+    height: max-content;
+    justify-content: center;
+    font-size:large;
+    margin: 50px 0 0 0;
+  }
+  #contactus_topleft
+   {
+    display: none;
+  }
+  
+  #contactus_topright table td{
+    display: flex;
+    justify-content: center;
+    }
+#contact_name, #contact_email, #contact_mobile, #contact_enquiry {
+  width:100%
+}
+
 }
