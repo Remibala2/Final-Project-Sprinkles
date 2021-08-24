@@ -19,8 +19,8 @@
       crossorigin="anonymous"
     />
     <!-- Custom Project CSS-->
-    <link rel="stylesheet" href="Project.css" />
-    
+    <link rel="stylesheet" href="css\Project.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Trirong"
@@ -60,6 +60,10 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link" href="#">Feedback Us</a>
           </li>
 
@@ -67,72 +71,54 @@
             <a class="nav-link" href="#">Admin Form</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <!--        <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-        </form>
+        </form>-->
       </div>
     </nav>
-    
-    <div class="container-fluid width: 100%">
-    <div class="row">
-         <div class="col-lg-12 col-md-12 col-sm-12">
-    <div class="alert alert-primary" role="alert">
-    
-      Dear Customer, there could be a little delay with the delivery of
-      delicacies. Discuss with our friendly shoper about the delivery timings.
+
+    //Covid Alert
+    <div class="container-fluid" style="height: 35px">
+      <div class="alertrow">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div
+            class="alert alert-info alert-dismissible fade show"
+            role="alert"
+          >
+            <button type="button" class="close" data-dismiss="alert">
+              &times;
+            </button>
+            Dear Customer, there could be a little delay with the delivery of
+            delicacies. Discuss with our friendly shoper about the delivery
+            timings.
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
 
-
-
-<!--Jumbotron-->
+    <!--Jumbotron-->
     <div class="container-fluid jumbotron">
-      <!--Breadcrumb-->
-            <div class="container">
-        <h1 class="page-item"></h1>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">1</li>
-          </ol>
-        </nav>
-      <!--Spinners-->
-      <div class="text-center">
-     <div class="spinner-grow text-primary" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-secondary" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-success" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-danger" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-warning" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-info" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-light" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-<div class="spinner-grow text-dark" style="width: 8px; height: 8px;" role="status">
-  <span class="visually-hidden"></span>
-</div>
-</div>
-</div>
+      <h3 class="display-5">Sprinkles</h3>
+      <h1 class="display-4">Our Products</h1>
     </div>
+    <!--
+    Breadcrumb
+    <div class="container">
+      <h1 class="page-item"></h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">1</li>
+        </ol>
+      </nav>
+    </div>-->
 
+    <!--Dropdown menu below Jumbotron-->
     <div class="dropdown">
       <button
         class="btn btn-lg btn-secondary dropdown-toggle w-fit"
@@ -151,82 +137,42 @@
       </div>
     </div>
 
-    <!--Grid to hold product Containers-->
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-        <div class="col-lg-6 col-md-3 col-sm-6">
-          <div class="card" style="width: 15rem">
-            <img
-              src="Project images\Chocolate.jpg"
-              class="card-img-top"
-              alt="Cake image unavailable"
-            />
-            <div class="card-body">
-              <h6 class="card-title" style="font-size: large font">
-                Cake Sparkles
-              </h6>
-              <p class="card-text" style="font-size: small">SGD</p>
-              <p class="card-text" style="font-size: x-small">Description</p>
-
-              <!-- <a href="#" class="btn btn-primary" style="font-size: x-small"
-                  >Go somewhere</a
-                >-->
-            </div>
-          </div>
-        </div>
+    <div class="Productjumbotron">
+      <div id="list-items">
+        <div id="row" class="row"></div>
       </div>
+    </div>
 
-      <div class="col-sm-4">
-        <div class="col-lg-6 col-md-3 col-sm-6">
-          <div class="card" style="width: 15rem">
-            <img
-              src="Project images\Sprinkle.jpg"
-              class="card-img-top"
-              alt="Cake image unavailable"
-            />
-            <div class="card-body">
-              <h6 class="card-title" style="font-size: large font">
-                Cake Sparkles
-              </h6>
-              <p class="card-text" style="font-size: small">SGD</p>
-              <p class="card-text" style="font-size: x-small">Description</p>
-
-              <!-- <a href="#" class="btn btn-primary" style="font-size: x-small"
-                >Go somewhere</a
-              >-->
-            </div>
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p id="modalName"></p>
           </div>
-        </div>
-      </div>
-
-
-<div class="col-sm-4">
-        <div class="col-lg-6 col-md-3 col-sm-6">
-          <div class="card" style="width: 15rem">
-            <img
-              src="Project images\ef737a0a54cd00eb457774c1e4f1a30f.gif"
-              class="card-img-top"
-              alt="Cake image unavailable"
-            />
-            <div class="card-body">
-              <h6 class="card-title" style="font-size: large font">
-                Cake Sparkles
-              </h6>
-              <p class="card-text" style="font-size: small">SGD</p>
-              <p class="card-text" style="font-size: x-small">Description</p>
-
-              <!-- <a href="#" class="btn btn-primary" style="font-size: x-small"
-                >Go somewhere</a
-              >-->
-            </div>
-            </div>
+          <div class="modal-body">
+            <img id="modalImg" src="" class="card-img-top" alt="image" />
+            <hr />
+            <b>Size: </b> <span id="modalSize"></span><br />
+            <b>Description: </b><span id="modalDescription"></span><br />
+            <b>Price: </b> <span id="modalPrice"></span><br /><br />
+            <br />
+          </div>
+          <br />
+          <div class="modal-footer">
+            <a class="btn btn-primary" id="modalClose" data-dismiss="modal"
+              >Close</a
+            >
           </div>
         </div>
       </div>
     </div>
-    </body>
 
     <nav aria-label="Page navigation example">
       <ul class="pagination">
@@ -243,70 +189,19 @@
         </li>
       </ul>
     </nav>
+    <hr style="width: 100%; text-align: left; margin: 18px 0" />
+    <button onclick="topFunction()" id="back-top" title="Go to top">Top</button>
 
-    <!-- Fixed Footer Nav Bar-->
-    <footer class="navbar navbar-expand-lg fixed-bottom">
-      <div id="foot_image">
-        <img
-          src="Project images/Sprinkles-Cupcakes-Ice-Cream-Restaurant-Plano-Magazine-8.jpg"
-          height="130px"
-          width="200px"
-          alt="Sparkle"
-        />
+    <footer>
+      <div class="footer_copyright">
+        <h2>@ 2021 Sprinkles. All rights reserved.</h2>
       </div>
 
-      <div id="Location">
-        <img
-          src="Project images/Location logo 4.png"
-          height="40px"
-          width="50px"
-        />
-        <ul>
-          <li>#03-165, Tampines Mall, 510738</li>
-          <li>#B1-456iOS Orchard, Orchard Road</li>
-          <li>Vivo City</li>
-        </ul>
-      </div>
-
-      <div id="ContactUs">
-        <img src="Project images/phone logo1.jpg" height="40px" width="50px" />
-        <div>+65 96738434</div>
-      </div>
-
-      <div id="OpeningHours">
-        <img
-          src="Project images/Workinh hour logo1.png"
-          height="40px"
-          width="50px"
-        />
-        <div>Daily - 10AM to 9PM</div>
-      </div>
-
-      <div id="SocialMedia">
-        <div>Follow Us on</div>
-        <a href="https://www.instagram.com/queenbeesjfsd/" target="_blank">
-          <img
-            src="Project images/insta.jpg"
-            alt="Insta"
-            height="30px"
-            width="30px"
-          />
-        </a>
-
-        <a
-          href="https://www.facebook.com/profile.php?id=100071100652761"
-          target="_blank"
-        >
-          <img
-            src="Project images/facebook logo.jpg"
-            alt="Facebook"
-            height="30px"
-            width="30px"
-          />
-        </a>
-      </div>
+      <!--<nav class="footer_nav">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>-->
     </footer>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -327,5 +222,8 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
+    <script src="js\formScript.js"></script>
+    <script src="js\productController.js"></script>
+    <script src="js\productPage.js"></script>
   </body>
 </html>
