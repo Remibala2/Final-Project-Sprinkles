@@ -223,10 +223,37 @@ justify-content: center;
   
 }
 
+#adminform {
+  margin: 100px;
+ }
+
+#adminform h3 {
+  color: teal;
+  text-align: center;
+  font-size: 50px;
+  
+}
+#adminform input[type=file],
+  textarea {
+    /* Full width */
+      width: 100%;
+      /* Some padding */
+      padding: 10px;
+      /* Rounded borders */
+      border-radius: 4px;
+      
+  }
+  #adminform label {
+    font-size: 20px;
+    font-weight: bolder;
+
+  }
+
 @media only screen and (max-width: 600px) {
   #Section_bottom,
   #contactus_topleft,
-  #contactus_topright {
+  #contactus_topright,
+ .alert {
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -244,13 +271,13 @@ justify-content: center;
 #contact_name, #contact_email, #contact_mobile, #contact_enquiry {
   width:75%
 }
-
 }
 
 @media only screen and (max-width: 950px) {
   #Section_bottom,
   #contactus_topleft,
-  #contactus_topright
+  #contactus_topright,
+  .alert
    {
      display: flex;
     flex-direction: column;
