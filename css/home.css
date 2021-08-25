@@ -1,0 +1,133 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 90px;
+  font-size: 14px;
+  /* font-weight: bold; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer div {
+  display: flex;
+  padding: 8px;
+}
+
+#foot_image img {
+  border: 2px solid white;
+  height: 80px;
+  width: 150px;
+}
+
+#foot_image img {
+  display: flex;
+  border-radius: 10%;
+}
+
+#Location img {
+  display: flex;
+  border-radius: 8%;
+  position: relative;
+  left: 6px;
+  /* top: 40px; */
+
+  justify-self: center;
+}
+
+#Location li {
+  list-style: square;
+  padding-top: 18px
+}
+
+#ContactUs img,
+#OpeningHours img {
+  display: flex;
+  border-radius: 8%;
+  justify-self: center;
+  left: 0px;
+  top: 5px;
+  position: relative;
+}
+
+#ContactUs,
+#OpeningHours,
+#SocialMedia {
+  display: flex;
+}
+
+#SocialMedia img {
+  display: flex;
+  border-style: solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dropdown button {
+  background-color: white;
+  color: black;
+  text-align: justify;
+  border-radius: 10%;
+  width: fit-content;
+}
+
+.card img {
+  height: 15rem;
+}
+
+.card {
+  margin: 2rem 1rem 1rem;
+}
+
+.row card {
+  height: 5rem;
+}
+
+.row {
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+.bio {
+  text-align:justify;
+}
+
+
+/* .dropdown {
+  margin: 2rem 0 0 5rem;
+} */
+
+.alert {
+  margin: 5rem 0 0 0;
+  color: red;
+  background-color: hsl(60, 92%, 76%);
+  text-align: center;
+}
+.pagination {
+  margin: 30px 500px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+}
+
+.ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+
+@media only screen and (max-width: 600px) {
+footer{
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+}
+}
