@@ -8,59 +8,65 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home.css">;
+    <link rel="stylesheet" href="css/Project.css">;
 
     <title>Homepage</title>
   </head>
   
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <img src="Project images/logo5.jpg" height="5%" width="8%" /> 
-       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img src="Project images/logo5.jpg" height="7%" width="7%" />
 
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
+      <!--<a class="navbar-brand" href="#">Navbar</a>-->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Product List</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">Cakes</a>
-                 <a class="dropdown-item" href="#">Pasteries</a>
-                 <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Cup Cakes</a>
-                 </div>
-            </li>
-            
-          <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#contactUs-modal">Feedback Us</a>
-          </li> 
-                 
-          <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal">Admin Form</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="Home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
-         
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Product_List.html">Product List</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Feedback Us</a>
+          </li>-->
+
+          <li class="nav-item">
+            <a class="nav-link" href="adminForm.html">Admin Form</a>
+          </li>
         </ul>
+        <!--        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>-->
+      </div>
+    </nav>
 
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-
-        </div>
-
-      </nav>
 
       <section class="container-fluid jumbotron my-3">
             
@@ -96,9 +102,9 @@
 
       </section>
 
-      <section class="container">
-          <div class="row">
-              <div class="col-lg-6">
+      <section id="HomeSection1" class="container">
+          <div class="homesec1left">
+              <div class="homesec1 col-lg-6">
               <h3>A decorative delicious dessert</h3>
                <p>Watch our baker decorating the cake, Yummy yummy in my tummy!</p> 
 
@@ -108,7 +114,7 @@
 
           
           </div>
-          <div class="col-lg-3">
+          <div class="homesec1right1 col-lg-3">
                 <h3>Our Mission</h3>
                 <p>We endeavor to provide family of our customers with safe, 
                   appetizing, nutritious and quality cakes and pasteries at reasonable prices.            
@@ -116,7 +122,7 @@
                   and believe that customer satisfaction is our ultimate goal!</p>
           
         </div>
-        <div class="col-lg-3">
+        <div class="homesec1right2 col-lg-3">
             <h3>Our Values</h3>
             <ul>
               <li><b>Craftsmanship: </b>Honor the tradition, Revere the product, Hone our skills.</li>
@@ -134,8 +140,8 @@
         </div>
      
 
-    <div class="row">
-        <div class="col-lg-4">
+    <div class="homesection2">
+        <div class="homecards col-lg-4">
 
             <div class="card" style="width: 18rem;">
                 <img src="Project images/free_delivery.jpg" width="200px" height="150px" alt="Free Delivery">
@@ -147,7 +153,7 @@
             </div> 
           </div>
 
-          <div class="col-lg-4">
+          <div class="homecards col-lg-4">
             
             <div class="card" style="width: 18rem;">
               <img src="Project images/clock.jpg"  alt="Midnight Delivery">
@@ -160,7 +166,7 @@
 
           </div>
 
-          <div class="col-lg-4">
+          <div class="homecards col-lg-4">
 
           <div class="card" style="width: 18rem;">
             <img src="Project images/discount.jpg"  alt="Promotions">
@@ -178,20 +184,20 @@
     <br><br>
       </section>
 
-      
+      <!--
                
     <footer class="navbar navbar-expand-lg bg-dark fixed-bottom"> 
          
     
       <div id="Location">
-          <img src="Project images/location.png" width="40px"/>
+          <img src="Project images/location.png" width="30px"/>
       </div>
 
       <div>Tampines Mall, Vivo City</div>
       
       
       <div id="ContactUs">
-         <img src="Project images/phone_logo1.jpg" height="40px" width="50px" />
+         <img src="Project images/phone_logo1.jpg"  width="40px" />
          <div>+65 87654321</div>
       </div>
       
@@ -206,22 +212,31 @@
      
        <div id="SocialMedia">
           <div>Follow Us on</div>
-              <!-- <a href="https://www.instagram.com/queenbeesjfsd/" target="_blank"> -->
+              <a href="https://www.instagram.com/queenbeesjfsd/" target="_blank">
 
                 <img src="Project images/insta.jpg" alt="Insta" height="30px" width="30px"/>
               
-              <!-- <a
+              <a
                 href="https://www.facebook.com/profile.php?id=100071100652761"
-                target="_blank"> -->
+                target="_blank">
                 <img src="Project images/facebook_logo.jpg" alt="Facebook" height="30px" width="30px"/>
               
             </div>
       
     
     
-   </footer>
+   </footer>-->
    <br><br>
-    
+   <footer id="productFooter">
+    <div class="footer_copyright">
+      <h2>@ 2021 Sprinkles. All rights reserved.</h2>
+    </div>
+
+    <!--<nav class="footer_nav">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </nav>-->
+  </footer>
 
   
     <!-- Optional JavaScript; choose one of the two! -->
